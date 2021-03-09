@@ -3,9 +3,7 @@ int left_pin = 7;
 int forward_pin = 10;
 int reverse_pin = 9;
 
-// duration for output
 int time = 50;
-// initial command
 int command = 0;
 
 void setup() {
@@ -17,7 +15,6 @@ void setup() {
 }
 
 void loop() {
-  //receive command
   if (Serial.available() > 0){
     command = Serial.read();
   }
